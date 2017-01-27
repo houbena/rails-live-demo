@@ -1,0 +1,7 @@
+<%= form_for([ @movie, Review.new], remote:true) do |form| %>
+
+    Type your review here: <br>
+    <%= form.text_area :body, size: '60x10'%> <br>
+    <%= form.submit %>
+
+<% end %>
